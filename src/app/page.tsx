@@ -1,13 +1,21 @@
-import CodeSnippet from "@/component/code-snippet";
-import MousePosition from "$/post/build-interative-blog/component/mouse-position";
-import { reqPost } from "@/helper/post";
-import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
+import { reqList } from "@/helper/post";
 
 async function Page() {
-    const post = await reqPost("/post/build-interative-blog/index.md");
-    const components = { pre: CodeSnippet, MousePosition };
+    const list = await reqList();
 
-    return <MDXRemote source={post.content} components={components} />;
+    return (
+        <ul>
+            {list.map((item) => (
+                <li key={item.slug}>
+                    <h2>
+                        <Link href={item.slug}>{item.title}</Link>
+                    </h2>
+                    <p>{item.abstract}</p>
+                </li>
+            ))}
+        </ul>
+    );
 }
 
 export default Page;
