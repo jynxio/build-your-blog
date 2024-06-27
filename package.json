@@ -1,0 +1,49 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "predev": "bun ./src/helper/bundler.ts",
+        "start": "next dev",
+        "prestart": "bun ./src/helper/bundler.ts",
+        "build": "next build",
+        "deploy": "vercel --prod",
+        "preview": "next start",
+        "check:js": "biome lint --write",
+        "check:css": "stylelint \"**/*.{css,scss,sass,less,postcss}\" --fix",
+        "check:style": "prettier --write \"**/*.{html,vue,xml,yml,yaml,css,scss,sass,less,postcss}\" && biome format --write",
+        "check:all": "npm run check:js && npm run check:css && npm run check:style",
+        "prepare": "husky",
+        "lintstaged": "lint-staged"
+    },
+    "dependencies": {
+        "clsx": "2.1.1",
+        "next": "14.2.4",
+        "react": "18.3.1",
+        "react-dom": "18.3.1",
+        "react-use": "^17.5.0"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.8.2",
+        "@types/fs-extra": "11.0.4",
+        "@types/node": "20.14.9",
+        "@types/react": "18.3.3",
+        "@types/react-dom": "18.3.0",
+        "@types/rss": "0.0.32",
+        "autoprefixer": "10.4.19",
+        "fs-extra": "11.2.0",
+        "gray-matter": "4.0.3",
+        "husky": "9.0.11",
+        "lint-staged": "15.2.7",
+        "next-mdx-remote": "5.0.0",
+        "postcss": "8.4.38",
+        "postcss-nested": "6.0.1",
+        "postcss-preset-env": "9.5.14",
+        "prettier": "3.3.2",
+        "rss": "1.2.2",
+        "sharp": "0.33.4",
+        "shiki": "1.9.1",
+        "stylelint": "16.6.1",
+        "stylelint-config-standard": "36.0.1",
+        "typescript": "5.5.2"
+    }
+}
