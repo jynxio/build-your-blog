@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Your title]]></title>
+        <description><![CDATA[Your title]]></description>
+        <link>https://www.your-domain.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Thu, 27 Jun 2024 17:12:50 GMT</lastBuildDate>
+        <atom:link href="https://www.your-domain.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <copyright><![CDATA[CC BY-NC-ND 4.0]]></copyright>
+        <language><![CDATA[en]]></language>
+        <category><![CDATA[Web Technology]]></category>
+        <item>
+            <title><![CDATA[Build the interactive blog with MDX]]></title>
+            <description><![CDATA[A step-by-step guide to building interactive static blogs using MDX, while harnessing Next.js's SSG capabilities to dramatically boost your web page performance.]]></description>
+            <link>http://some-website.com/build-interative-blog</link>
+            <guid isPermaLink="true">http://some-website.com/build-interative-blog</guid>
+            <pubDate>Thu, 20 Jun 2024 16:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[What's CSS Modules]]></title>
+            <description><![CDATA[CSS Modules scope class and animation names locally, preventing conflicts. They compile to ICSS and are imported as objects in JavaScript, mapping local to global names, promoting modular and reusable styling.]]></description>
+            <link>http://some-website.com/what-is-css-modules</link>
+            <guid isPermaLink="true">http://some-website.com/what-is-css-modules</guid>
+            <pubDate>Thu, 20 Jun 2024 16:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
