@@ -9,8 +9,9 @@ function RootLayout({ children }: { children: React.ReactNode }) {
             </head>
 
             <body>
-                <header style={{ fontSize: "1.5rem" }}>
+                <header style={{ display: "flex", gap: "1rem", fontSize: "1.5rem" }}>
                     <Link href="/">Post</Link>
+                    <Link href="/rss">RSS</Link>
                 </header>
 
                 <main>{children}</main>
