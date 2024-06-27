@@ -193,6 +193,8 @@ Markdown 还有一种名为 MDX 的扩展语法，MDX = Markdown + JSX，也就�
 
 项目事先创建好了一个 `<MousePosition>` 组件，你可以从 `post/build-interative-blog/component/mouse-position` 文件夹找到它，先来看看它的效果吧！
 
+<MousePosition />
+
 这是怎么实现的呢？首先在 Markdown 中引用这个自定义组件。
 
 ```diff
