@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import path from "node:path";
 import CodeSnippet from "@/component/code-snippet";
 import MousePosition from "$/post/build-interative-blog/component/mouse-position";
-import { reqPost } from "@/helper/post";
+import { reqPost, reqList } from "@/helper/post";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { APP_URL } from "@/constant";
 
@@ -14,6 +14,12 @@ async function Page({ params }: Props) {
     const components = { pre: CodeSnippet, MousePosition };
 
     return <MDXRemote source={post.content} components={components} />;
+}
+
+export async function generateStaticParams() {
+    const posts = await reqList();
+
+    return posts.map((post) => ({ slug: post.slug }));
 }
 
 async function generateMetadata({ params }: Props): Promise<Metadata> {

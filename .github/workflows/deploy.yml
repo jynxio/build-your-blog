@@ -1,0 +1,42 @@
+name: Build and Deploy
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4.1.1
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22.3'
+
+            - name: Set up Bun.js
+              uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: '1.1'
+
+            - name: Install Dependencies
+              run: npm install --legacy-peer-deps
+
+            - name: Move Images
+              run: npm run predev
+
+            - name: Build
+              run: npm run build
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3.9.3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: ./out
