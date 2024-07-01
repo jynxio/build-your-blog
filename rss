@@ -4,17 +4,17 @@
         <description><![CDATA[Your title]]></description>
         <link>https://www.your-domain.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Mon, 01 Jul 2024 00:57:24 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 01 Jul 2024 01:32:46 GMT</lastBuildDate>
         <atom:link href="https://www.your-domain.com/rss.xml" rel="self" type="application/rss+xml"/>
         <copyright><![CDATA[CC BY-NC-ND 4.0]]></copyright>
         <language><![CDATA[en]]></language>
         <category><![CDATA[Web Technology]]></category>
         <item>
-            <title><![CDATA[Build the interactive blog with MDX]]></title>
-            <description><![CDATA[A step-by-step guide to building interactive static blogs using MDX, while harnessing Next.js's SSG capabilities to dramatically boost your web page performance.]]></description>
+            <title><![CDATA[Build an Interactive Blog with MDX]]></title>
+            <description><![CDATA[Use Next.js and MDX to develop an interactive static blog, then deploy it to a static server (such as GitHub Pages) using SSG mode.]]></description>
             <link>http://some-website.com/build-interative-blog</link>
             <guid isPermaLink="true">http://some-website.com/build-interative-blog</guid>
-            <pubDate>Thu, 20 Jun 2024 16:00:00 GMT</pubDate>
+            <pubDate>Invalid Date</pubDate>
         </item>
         <item>
             <title><![CDATA[What's CSS Modules]]></title>
